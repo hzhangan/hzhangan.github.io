@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fabricación Digital on Nombre Alumno</title>
+    <link>https://haibility.github.io/docs/</link>
+    <description>Recent content in Fabricación Digital on Nombre Alumno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="https://haibility.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalar Tema</title>
+      <link>https://haibility.github.io/docs/instalar-tema/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://haibility.github.io/docs/instalar-tema/</guid>
+      <description>Tutorial de intalación del tema utilizando el Framework Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Configuración</title>
+      <link>https://haibility.github.io/docs/configuracion/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://haibility.github.io/docs/configuracion/</guid>
+      <description>Tutorial de configuración básica del menú y otros elementos del tema.</description>
+    </item>
+    
+    <item>
+      <title>Ejemplo Shortcodes</title>
+      <link>https://haibility.github.io/docs/ejemplo/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://haibility.github.io/docs/ejemplo/</guid>
+      <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
+    </item>
+    
+    <item>
+      <title>Ejemplos Markdown</title>
+      <link>https://haibility.github.io/docs/markdown/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://haibility.github.io/docs/markdown/</guid>
+      <description>Ejemplos de uso de lenguaje Markdown para redactar las publicaciones.</description>
+    </item>
+    
+    <item>
+      <title>Objetivos</title>
+      <link>https://haibility.github.io/docs/objetivos/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://haibility.github.io/docs/objetivos/</guid>
+      <description>Objetivos general y específico del Taller del segundo trimestre de 2020.</description>
+    </item>
+    
+    <item>
+      <title>Encargo 1</title>
+      <link>https://haibility.github.io/docs/encargo-1/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://haibility.github.io/docs/encargo-1/</guid>
+      <description>Planimetría con Fusion 360 y edición de planimetría en Ai</description>
+    </item>
+    
+  </channel>
+</rss>
