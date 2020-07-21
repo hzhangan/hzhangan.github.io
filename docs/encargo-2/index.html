@@ -153,7 +153,9 @@
     <source src="/img/v1.mp4"  type="video/mp4">
     </video>
 </div>
-<p>Una vez que ya entendemos el paso a paso de cómo podremos acomodar cada piezas en la plancha de terciado, realizaremos la misma dinámica con cada una de las partes de la silla.</p>
+<p>Una vez que entendemos cómo mover cada pieza para alinearlo con la plancha de terciado, realizaremos la misma dinámica con cada una de las partes de la silla para obtener el siguiente resultado:</p>
+<p><img src="/img/fresia/1.jpg" alt="foto1"></p>
+<p><strong>Tutorial mecanizado CNC</strong>
 <div>
     <video 
     width="100%" 
@@ -161,13 +163,23 @@
     autoplay muted loop controls preload>
     <source src="/img/v2.mp4"  type="video/mp4">
     </video>
-</div>
+</div></p>
 <h4 id="paso-2---manufacture">Paso 2 - Manufacture:</h4>
 <p>Una vez que tengamos el espacio configurado con todas las piezas que queremos mecanizar en la plancha de terciado, cambiaremos de modo Diseño a Manufactura para acceder a las herramientas 2D.</p>
-<p>Primero configuraremos las indicaciones necesarias para el mecanizado. En esta ocación ocuparemos la máquina &ldquo;Autodesk CNC de 3 Axis&rdquo;. Definimos nuestro modelo de orientación, seleccionamos la plancha como sólido sobre el cual trabajaremos y debemos definir cuáles serán las piezas que queremos cortar.</p>
-<p>La primera operación que realizaremos es un &ldquo;2D Contour&rdquo; con una fresa &ldquo;Flat end mill&rdquo; de 6mm, herramienta de corte que ocuparemos para este trabajo. Algo importante que debemos considerar es que una fresa de 6mm no puede perforar una plancha de 15mm de una sola pasada porque se puede desgastar o no realizará un trabajo eficiente. Por lo tanto, en &ldquo;Multiple Depths&rdquo; definiremos un &ldquo;Maximum Roughing Stepdown&rdquo; de 3mm para que la fresa realice el calado en 5 pasadas en vez de 1.</p>
-<p>La segunda operación la realizaremos con la función &ldquo;2D Pocket&rdquo; para trabajar las caras de los calados de las piezas. Mantendremos la misma lógica que usamos para configurar la operación anterior.</p>
-<p>Por último, ocuparemos nuevamente el &ldquo;2D Contour&rdquo; para definir el área exterior de cada parte de la silla. En este paso, además de definir &ldquo;Multiple Depths&rdquo;, debemos tener en cuenta que la pieza no debe quedar suelta ya que la fresa podría romper la pieza antes de terminar el trabajo. Para esta situación usaremos también los &ldquo;Tabs&rdquo; que definen pequeñas áreas en donde la fresa no va a generar un mecanizado. Basta con que tengamos algunos Tabs para sujetar la pieza.</p>
+<p>Primero configuraremos las indicaciones necesarias para el mecanizado. En esta ocación ocuparemos la máquina <em>Autodesk CNC de 3 Axis</em>. Definimos nuestro modelo de orientación, seleccionamos la plancha como sólido sobre el cual trabajaremos y debemos definir cuáles serán las piezas que queremos cortar.</p>
+<p>La primera operación que realizaremos es un <em>2D Contour</em> con una fresa <em>Flat end mill</em> de 6mm, herramienta de corte que ocuparemos para este trabajo. Algo importante que debemos considerar es que una fresa de 6mm no puede perforar una plancha de 15mm de una sola pasada porque se puede desgastar o no realizará un trabajo eficiente. Por lo tanto, en <em>Multiple Depths</em> definiremos un <em>Maximum Roughing Stepdown</em> de 3mm para que la fresa realice el calado en 5 pasadas en vez de 1.</p>
+<p>La segunda operación la realizaremos con la función <em>2D Pocket</em> para trabajar las caras de los calados de las piezas. Mantendremos la misma lógica que usamos para configurar la operación anterior.</p>
+<p>Por último, ocuparemos nuevamente el <em>2D Contour</em> para definir el área exterior de cada parte de la silla. En este paso, además de definir <em>Multiple Depths</em>, debemos tener en cuenta que la pieza no debe quedar suelta ya que la fresa podría romper la pieza antes de terminar el trabajo. Para esta situación usaremos también los <em>Tabs</em> que definen pequeñas áreas en donde la fresa no va a generar un mecanizado. Basta con que tengamos algunos Tabs para sujetar la pieza.</p>
+<p>Finalmente, con las configuraciones necesarias el recorrido de la fresa por cada pieza será de esta forma:</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v5.mp4"  type="video/mp4">
+    </video>
+</div>
+<p><strong>Tutorial Manufacture</strong>
 <div>
     <video 
     width="100%" 
@@ -175,10 +187,20 @@
     autoplay muted loop controls preload>
     <source src="/img/v3.mp4"  type="video/mp4">
     </video>
-</div>
+</div></p>
 <h1 id="trazado">Trazado</h1>
-<p>Vamos a seguir con el asiento y veremos cómo hacer los trazados que tiene en la parte inferior, estos recortes sirven para generar la flexibilidad del material.</p>
-<p>Realizaremos nuevamente un sketch y definiremos el contorno exterior con &ldquo;2D Contour&rdquo; como lo hicimos anteriormente. Para el trazado ocuparemos la función &ldquo;Trace&rdquo; para definir cada linea de recorte.</p>
+<p>Aquí realizaremos nuevamente un sketch, esta vez de una plancha de terciado con 9mm y definiremos el contorno exterior del asiento con la función <em>2D Contour</em> como lo hicimos anteriormente. La parte del asiento tiene varios trazados en la parte inferior de la pieza, estos recortes sirven para generar la flexibilidad del material. Para poder generar estos trazados ocuparemos la función <em>Trace</em> para definir cada linea de recorte. Le pediremos a la fresa que haga cortes con 4.5mm de profunidad.</p>
+<p><img src="/img/fresia/2.jpg" alt="foto2"></p>
+<p>La fresa hará el recorrido por cada uno de estos trazos:</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v6.mp4"  type="video/mp4">
+    </video>
+</div>
+<p><strong>Tutorial Trazado</strong></p>
 <div>
     <video 
     width="100%" 
