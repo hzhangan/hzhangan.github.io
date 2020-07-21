@@ -12,12 +12,21 @@
     
     
     <item>
-      <title>Instalar Tema</title>
-      <link>https://hzhangan.github.io/docs/instalar-tema/</link>
+      <title>Encargo 1 - Plywood Chair</title>
+      <link>https://hzhangan.github.io/docs/encargo-1/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://hzhangan.github.io/docs/instalar-tema/</guid>
-      <description>Tutorial de intalación del tema utilizando el Framework Hugo.</description>
+      <guid>https://hzhangan.github.io/docs/encargo-1/</guid>
+      <description>Planimetría con Fusion 360 y edición de planimetría en Ai</description>
+    </item>
+    
+    <item>
+      <title>Encargo 2 - Silla Fresia</title>
+      <link>https://hzhangan.github.io/docs/encargo-2/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/encargo-2/</guid>
+      <description>Mecanizado CNC y trazado</description>
     </item>
     
     <item>
@@ -57,12 +66,12 @@
     </item>
     
     <item>
-      <title>Encargo 1</title>
-      <link>https://hzhangan.github.io/docs/encargo-1/</link>
+      <title>Instalar Tema</title>
+      <link>https://hzhangan.github.io/docs/instalar-tema/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://hzhangan.github.io/docs/encargo-1/</guid>
-      <description>Planimetría con Fusion 360 y edición de planimetría en Ai</description>
+      <guid>https://hzhangan.github.io/docs/instalar-tema/</guid>
+      <description>Tutorial de intalación del tema utilizando el Framework Hugo.</description>
     </item>
     
   </channel>
