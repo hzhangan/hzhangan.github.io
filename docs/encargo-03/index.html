@@ -103,11 +103,23 @@
     </li>
     
     <li class="">
-      <a href="https://hzhangan.github.io/docs/configuracion/">Configuración</a>
+      <a href="https://hzhangan.github.io/docs/bonus-01/">Encargo 03</a>
+    </li>
+    
+    <li class="">
+      <a href="https://hzhangan.github.io/docs/bonus-02/">Encargo 03</a>
+    </li>
+    
+    <li class="">
+      <a href="https://hzhangan.github.io/docs/bonus-03/">Encargo 03</a>
     </li>
     
     <li class="active ">
       <a href="https://hzhangan.github.io/docs/encargo-03/">Encargo 03</a>
+    </li>
+    
+    <li class="">
+      <a href="https://hzhangan.github.io/docs/configuracion/">Configuración</a>
     </li>
     
     <li class="">
@@ -357,7 +369,7 @@ Podemos dirigirnos a <em>Tool Library</em> copiamos la fresa que estamos ocupand
     <source src="/img/v7.mp4"  type="video/mp4">
     </video>
 </div>
-<p>Una vez que tenemos configurado todo lo anterior, antes de comenzar el proceso de mecanizado, debemos volver al modo <strong>DESIGN</strong> para hacer un nuevo <em>sketch</em>. Este <em>sketch</em> consiste en generar un project del respaldo hacia la cara superior del bloque de madera para optimizar el mecanizado. Ahora que tenemos el área del mecanizado podemos volver al modo <strong>MANUFACTURE</strong>.</p>
+<p>Una vez que tenemos configurado todo lo anterior, antes de comenzar el proceso de mecanizado, debemos volver al modo <strong>DESIGN</strong> para hacer un nuevo <em>sketch</em>. Este <em>sketch</em> consiste en generar un <em>project</em> del respaldo hacia la cara superior del bloque de madera para optimizar el mecanizado. Ahora que tenemos el área del mecanizado podemos volver al modo <strong>MANUFACTURE</strong>.</p>
 <div>
     <video 
     width="100%" 
@@ -370,7 +382,7 @@ Podemos dirigirnos a <em>Tool Library</em> copiamos la fresa que estamos ocupand
 <li><strong>Adaptative Clearing:</strong></li>
 </ol>
 <p>Aquí vamos a ejecutar la primera función con <em>Adaptive Clearing</em> que consiste en poder remover material para optimizar el procedimiento de obtener el resultado que queremos ontener en la superficie. Nos pedirán elegir la fresa y para esta herramienta ocuparemos la <em>Flat End Mill</em> modificado a un <em>Flute length</em> de 50mm, luego en <em>Geometry</em> vamos a cambiar el <em>Machine Boundery</em> a una <em>Selección</em> con el fin de poder seleccionar el sketch proyectado anteriormente en el bloque para que solamente haga el mecanizado dentro de ese espacio. En <em>Model</em> seleccionaremos el respaldo y antes de terminar la configuración, debemos cambiarl el <em>Optimal Load</em> a 3mm ya que no podemos cortar tanto material de una sola vez, sino que requiere de varias pasadas.</p>
-<div>
+<p><div>
     <video 
     width="100%" 
     height="450" 
@@ -378,11 +390,19 @@ Podemos dirigirnos a <em>Tool Library</em> copiamos la fresa que estamos ocupand
     <source src="/img/v9.mp4"  type="video/mp4">
     </video>
 </div>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v13.mp4"  type="video/mp4">
+    </video>
+</div></p>
 <ol start="3">
 <li><strong>Parallel:</strong></li>
 </ol>
 <p>Ahora que tenemos nuestra primera trayectoria creada, pasaremos a ocupar la función <em>Parallel</em>. En esta etapa ocuparemos la fresa <em>Ball End Mill</em> con 50mm de <strong>Flute length</strong>, en <em>Geometry</em> haremos lo mismo que en la función anterior, cambiar el <em>Machine Boundery</em> a una <em>Selección</em>, y en el modelo volvemos a seleccionar la pieza del respaldo. El fin de esta función es poder pasar del plano y generar una trayectoria que recorra la superficie con el fin de poder darle una terminación mucho más continua.</p>
-<div>
+<p><div>
     <video 
     width="100%" 
     height="450" 
@@ -390,11 +410,19 @@ Podemos dirigirnos a <em>Tool Library</em> copiamos la fresa que estamos ocupand
     <source src="/img/v10.mp4"  type="video/mp4">
     </video>
 </div>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v14.mp4"  type="video/mp4">
+    </video>
+</div></p>
 <ol start="4">
 <li><strong>Parallel 90°:</strong></li>
 </ol>
 <p>Siempre que uno hace este tipo de terminación paralela, lo correcto sería también hacer el mismo recorrido pero de manera perpendicular, para esto duplicaremos la función anterior y editaremos ciertas modaliddades. En los <em>Passes</em> debemos configurar el <em>Pass Direction</em> a 90° y el <em>Stepover</em> lo podemos reducir a 2mm para que el terminado tenga mayor resolución.</p>
-<div>
+<p><div>
     <video 
     width="100%" 
     height="450" 
@@ -402,15 +430,104 @@ Podemos dirigirnos a <em>Tool Library</em> copiamos la fresa que estamos ocupand
     <source src="/img/v11.mp4"  type="video/mp4">
     </video>
 </div>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v15.mp4"  type="video/mp4">
+    </video>
+</div></p>
 <p>Ahora que tenemos las tres trayectorias podemos simular la mecanización y veremos que no hay ningún impacto entre el cabezal y áreas del stock.</p>
 <div>
     <video 
     width="100%" 
     height="450" 
     autoplay muted loop controls preload>
-    <source src="/img/v12.mp4"  type="video/mp4">
+    <source src="/img/12.mp4"  type="video/mp4">
     </video>
 </div>
+<h6 id="paso-3-el-otro-lado-del-respaldo">PASO 3: El otro lado del respaldo</h6>
+<p>Es importante entender que llevado esto de forma física, cuando terminamos una cara del respaldo debemos retirarlo de la máquina, darla vuelta y recién realizar el mismo proceso por el otro lado.</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v16.mp4"  type="video/mp4">
+    </video>
+</div>
+<p><strong>Adaptative Clearing:</strong></p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v17.mp4"  type="video/mp4">
+    </video>
+</div>
+<p><strong>Parallel:</strong></p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v18.mp4"  type="video/mp4">
+    </video>
+</div>
+<p><strong>Parallel 90°:</strong></p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/v19.mp4"  type="video/mp4">
+    </video>
+</div>
+<h6 id="paso-4-partes-laterales-del-respaldo">PASO 4: Partes laterales del respaldo</h6>
+<p>Estas se trabajan una vez terminado el mecanizado de la parte superior e inferior del respaldo, se retira la pieza de la máquina y se lijan a mano las partes laterales del respaldo.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/E03/proceso/g3//15.jpg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/E03/proceso/g3//15.jpg" alt="15th" />
+				    </div>
+			      <figcaption>
+		          <p>15th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/E03/proceso/g3//15.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/E03/proceso/g3//16.jpg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/E03/proceso/g3//16.jpg" alt="16th" />
+				    </div>
+			      <figcaption>
+		          <p>16th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/E03/proceso/g3//16.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/E03/proceso/g3//17.jpg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/E03/proceso/g3//17.jpg" alt="17th" />
+				    </div>
+			      <figcaption>
+		          <p>17th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/E03/proceso/g3//17.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
 <p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
