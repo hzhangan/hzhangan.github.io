@@ -40,33 +40,6 @@
     
     <item>
       <title>Encargo 03</title>
-      <link>https://hzhangan.github.io/docs/bonus-01/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://hzhangan.github.io/docs/bonus-01/</guid>
-      <description>Mecanizado 2.5D</description>
-    </item>
-    
-    <item>
-      <title>Encargo 03</title>
-      <link>https://hzhangan.github.io/docs/bonus-02/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://hzhangan.github.io/docs/bonus-02/</guid>
-      <description>Mecanizado 2.5D</description>
-    </item>
-    
-    <item>
-      <title>Encargo 03</title>
-      <link>https://hzhangan.github.io/docs/bonus-03/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://hzhangan.github.io/docs/bonus-03/</guid>
-      <description>Mecanizado 2.5D</description>
-    </item>
-    
-    <item>
-      <title>Encargo 03</title>
       <link>https://hzhangan.github.io/docs/encargo-03/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -75,12 +48,30 @@
     </item>
     
     <item>
-      <title>Configuración</title>
-      <link>https://hzhangan.github.io/docs/configuracion/</link>
+      <title>Bonus 01</title>
+      <link>https://hzhangan.github.io/docs/bonus-01/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://hzhangan.github.io/docs/configuracion/</guid>
-      <description>Tutorial de configuración básica del menú y otros elementos del tema.</description>
+      <guid>https://hzhangan.github.io/docs/bonus-01/</guid>
+      <description>Mecanizado CNC</description>
+    </item>
+    
+    <item>
+      <title>Bonus 02</title>
+      <link>https://hzhangan.github.io/docs/bonus-02/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/bonus-02/</guid>
+      <description>Molde</description>
+    </item>
+    
+    <item>
+      <title>Bonus 03</title>
+      <link>https://hzhangan.github.io/docs/bonus-03/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/bonus-03/</guid>
+      <description>Materiales</description>
     </item>
     
     <item>
@@ -90,6 +81,15 @@
       
       <guid>https://hzhangan.github.io/docs/ejemplo-shortcode/</guid>
       <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
+    </item>
+    
+    <item>
+      <title>Configuración</title>
+      <link>https://hzhangan.github.io/docs/configuracion/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/configuracion/</guid>
+      <description>Tutorial de configuración básica del menú y otros elementos del tema.</description>
     </item>
     
     <item>
