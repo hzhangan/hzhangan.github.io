@@ -26,7 +26,7 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://hzhangan.github.io/docs/encargo-01/</guid>
-      <description>Planimetría con Fusion 360 y edición de planimetría en Ai</description>
+      <description>Planimetrías y edición</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://hzhangan.github.io/docs/bonus-02/</guid>
-      <description>Molde</description>
+      <description>Mecanizado molde 3D</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://hzhangan.github.io/docs/bonus-03/</guid>
-      <description>Investigación materiales reciclados</description>
+      <description>Materiales reciclados</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://hzhangan.github.io/docs/ejemplo-shortcode/</guid>
-      <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
+      <description>Contenido Shortcodes  Iframe de Fusion 360 Agregar Video Local MP4 Galería Fotos Lightbox Botón de Descarga   Agregar Iframe de Fusion 360    Código Iframe de Fusion 360 Markdown {{&amp;lt; iframe-fusion &amp;gt;}} Código Iframe de Fusion 360 HTML Shortcode &amp;lt;div&amp;gt; &amp;lt;iframe src=&amp;#34;https://myhub.</description>
     </item>
     
     <item>
@@ -89,7 +89,8 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://hzhangan.github.io/docs/configuracion/</guid>
-      <description>Tutorial de configuración básica del menú y otros elementos del tema.</description>
+      <description>Highlighting de Código Este tema utiliza el resaltado de código incorporado que se incluye con Hugo. https://gohugo.io/content-management/syntax-highlighting/
+Puede insertar fragmentos de código en cualquier Markdown utilizando la sintaxis de highlighting, es decir:</description>
     </item>
     
     <item>
@@ -98,7 +99,7 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://hzhangan.github.io/docs/markdown/</guid>
-      <description>Ejemplos de uso de lenguaje Markdown para redactar las publicaciones.</description>
+      <description>Ejemplos de códigos Markdown  Headings Párrafos Citado Listas Línea Horizontal Tabla Código Elementos e Imágenes   Headings Heading one Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor.</description>
     </item>
     
   </channel>
