@@ -7,7 +7,7 @@ var mesh1, mesh2;
 
 var markerRoot1;
 
-var RhinoMesh, RhinoMesh2, RhinoMesh3, RhinoMesh4, RhinoMesh5, RhinoMesh6, RhinoMesh7;
+var RhinoMesh, RhinoMesh2, RhinoMesh3, RhinoMesh4, RhinoMesh5, RhinoMesh6;
 
 init(); // llamado de la funcion principal que se encarga de hacer casi  todo en la app
 animate();
@@ -250,26 +250,7 @@ function init() {
                 }, onProgress, onError);
         });
 
-    //////OBJETO RHINO 5///////////////
-    new THREE.MTLLoader()
-    .setPath('data/models/')
-    .load('arroz 5.mtl', function (materials) {
-        materials.preload();
-        new THREE.OBJLoader()
-            .setMaterials(materials)
-            .setPath('data/models/')
-            .load('arroz 5.obj', function (group) {
-                RhinoMesh5 = group.children[0];
-                RhinoMesh5.material.side = THREE.DoubleSide;
-                RhinoMesh5.scale.set(0.25, 0.25, 0.25);
-                RhinoMesh5.castShadow = true;
-                RhinoMesh5.receiveShadow = true;
-
-                markerRoot1.add(RhinoMesh5);
-            }, onProgress, onError);
-    });
-
-        //////OBJETO RHINO 6///////////////
+        //////OBJETO RHINO 5///////////////
         new THREE.MTLLoader()
         .setPath('data/models/')
         .load('alga 6.mtl', function (materials) {
@@ -278,17 +259,17 @@ function init() {
                 .setMaterials(materials)
                 .setPath('data/models/')
                 .load('alga 6.obj', function (group) {
-                    RhinoMesh6 = group.children[0];
-                    RhinoMesh6.material.side = THREE.DoubleSide;
-                    RhinoMesh6.scale.set(0.25, 0.25, 0.25);
-                    RhinoMesh6.castShadow = true;
-                    RhinoMesh6.receiveShadow = true;
+                    RhinoMesh5 = group.children[0];
+                    RhinoMesh5.material.side = THREE.DoubleSide;
+                    RhinoMesh5.scale.set(0.25, 0.25, 0.25);
+                    RhinoMesh5.castShadow = true;
+                    RhinoMesh5.receiveShadow = true;
     
-                    markerRoot1.add(RhinoMesh6);
+                    markerRoot1.add(RhinoMesh5);
                 }, onProgress, onError);
         });
 
-            //////OBJETO RHINO 7///////////////
+            //////OBJETO RHINO 6///////////////
     new THREE.MTLLoader()
     .setPath('data/models/')
     .load('palta 7.mtl', function (materials) {
@@ -297,13 +278,13 @@ function init() {
             .setMaterials(materials)
             .setPath('data/models/')
             .load('palta 7.obj', function (group) {
-                RhinoMesh7 = group.children[0];
-                RhinoMesh7.material.side = THREE.DoubleSide;
-                RhinoMesh7.scale.set(0.25, 0.25, 0.25);
-                RhinoMesh7.castShadow = true;
-                RhinoMesh7.receiveShadow = true;
+                RhinoMesh6 = group.children[0];
+                RhinoMesh6.material.side = THREE.DoubleSide;
+                RhinoMesh6.scale.set(0.25, 0.25, 0.25);
+                RhinoMesh6.castShadow = true;
+                RhinoMesh6.receiveShadow = true;
 
-                markerRoot1.add(RhinoMesh7);
+                markerRoot1.add(RhinoMesh6);
             }, onProgress, onError);
     });
 }
