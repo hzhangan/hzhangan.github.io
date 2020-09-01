@@ -66,6 +66,15 @@
     </item>
     
     <item>
+      <title>Bonus 03</title>
+      <link>https://hzhangan.github.io/docs/bonus-03/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/bonus-03/</guid>
+      <description>Materiales reciclados</description>
+    </item>
+    
+    <item>
       <title>1° Encargo Grupal</title>
       <link>https://hzhangan.github.io/docs/encargo-04/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
@@ -84,40 +93,12 @@
     </item>
     
     <item>
-      <title>Bonus 03</title>
-      <link>https://hzhangan.github.io/docs/bonus-03/</link>
+      <title>3° Encargo: Pre Examen</title>
+      <link>https://hzhangan.github.io/docs/pre-examen/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://hzhangan.github.io/docs/bonus-03/</guid>
-      <description>Materiales reciclados</description>
-    </item>
-    
-    <item>
-      <title>Ejemplo Shortcodes</title>
-      <link>https://hzhangan.github.io/docs/ejemplo-shortcode/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://hzhangan.github.io/docs/ejemplo-shortcode/</guid>
-      <description>Contenido Shortcodes  Iframe de Fusion 360 Agregar Video Local MP4 Galería Fotos Lightbox Botón de Descarga   Agregar Iframe de Fusion 360    Código Iframe de Fusion 360 Markdown {{&amp;lt; iframe-fusion &amp;gt;}} Código Iframe de Fusion 360 HTML Shortcode &amp;lt;div&amp;gt; &amp;lt;iframe src=&amp;#34;https://myhub.</description>
-    </item>
-    
-    <item>
-      <title>Configuración</title>
-      <link>https://hzhangan.github.io/docs/configuracion/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://hzhangan.github.io/docs/configuracion/</guid>
-      <description>Highlighting de Código Este tema utiliza el resaltado de código incorporado que se incluye con Hugo. https://gohugo.io/content-management/syntax-highlighting/
-Puede insertar fragmentos de código en cualquier Markdown utilizando la sintaxis de highlighting, es decir:</description>
-    </item>
-    
-    <item>
-      <title>Ejemplos Markdown</title>
-      <link>https://hzhangan.github.io/docs/markdown/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://hzhangan.github.io/docs/markdown/</guid>
-      <description>Ejemplos de códigos Markdown  Headings Párrafos Citado Listas Línea Horizontal Tabla Código Elementos e Imágenes   Headings Heading one Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor.</description>
+      <guid>https://hzhangan.github.io/docs/pre-examen/</guid>
+      <description>Documentación del Encargo Grupal (Daza-Pinto-Zhang) sobre el diseño y modelado 3D de la maceta, su molde y contramolde.</description>
     </item>
     
   </channel>
