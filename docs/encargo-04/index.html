@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>1° Encargo Grupal - Nombre Alumno</title>
+  <title>Encargo 04 - Nombre Alumno</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://hzhangan.github.io/favicon.png">
@@ -119,15 +119,19 @@
     </li>
     
     <li class="active ">
-      <a href="https://hzhangan.github.io/docs/encargo-04/">1° Encargo Grupal</a>
+      <a href="https://hzhangan.github.io/docs/encargo-04/">Encargo 04</a>
     </li>
     
     <li class="">
-      <a href="https://hzhangan.github.io/docs/encargo-04-continuaci%C3%B3n/">2° Encargo Grupal</a>
+      <a href="https://hzhangan.github.io/docs/encargo-5.1/">Encargo 5.1</a>
     </li>
     
     <li class="">
-      <a href="https://hzhangan.github.io/docs/pre-examen/">3° Encargo: Pre Examen</a>
+      <a href="https://hzhangan.github.io/docs/encargo-5.2/">Encargo 5.2</a>
+    </li>
+    
+    <li class="">
+      <a href="https://hzhangan.github.io/docs/encargo-5.3/">Encargo 5.3</a>
     </li>
     
   </ul>
@@ -137,125 +141,11 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">1° Encargo Grupal</h1>
+<h1 class="title">Encargo 04</h1>
 <div class="content ">
-  <h2 id="diseño-y-modelado-maceta-para-impresión-3d--investigación-de--materiales">Diseño y Modelado maceta para impresión 3D + Investigación de  materiales</h2>
-<p>En este encargo se pidió diseñar la forma y la materialidad de un contenedor de plantas. Para esto investigamos sobre el espacio óptimo que necesita una semilla tanto para germinar, como para crecer y formar parte de un huerto. Todo esto en conjunto de la recolección de información sobre los nutrientes de algunos desechos orgánicos y sus beneficios para las plantaciones.</p>
-<p>A continuación les dejamos toda la documentación dividida en tres partes, el diseño y modelado de la maceta, las propiedades de los materiales y la bibliografía de donde sacamos todos los datos.</p>
-<h2 id="1-diseño-y-modelado-3d">1. Diseño y modelado 3D</h2>
-<h3 id="paso-a-paso-diseño-maceta-molde-y-contramolde">Paso a paso diseño maceta, molde y contramolde</h3>
-<p>En base a la información que obtuvimos, llegamos a la conclusión que al momento de diseñar la forma de la maceta debemos considerar el tipo de semilla que queremos plantar y cómo serán sus raíces, ya que estas en un futuro necesitarán espacio para poder anclarse a la tierra y quedar firmes.</p>
-<p>Por ejemplo, los <em>bonsai</em> usan maceteros muy poco profundos, pero por otro lado, los ajos necesitan de un macetero más profundo para que la planta tenga espacio para crecer aproximadamente el doble hacia abajo.</p>
-<p><img src="/img/encargo1grupo/1.png" alt="Imagen Simple"></p>
-<p>Por lo que llegamos a la conclusión de que queremos hacer macetas no tan pequeñas, que tengan una <strong>profundidad razonable</strong> para no tener que germinar sólo plantas que no aumenten mucho su tamaño, ni tampoco utilizar estos contenedores sólo para la etapa inicial de germinación. Además deben tener una <strong>superficie grande</strong> para disponer las semillas con una separación de 3cmm o 4cmm entre ellas. Siempre considerando que no podíamos sobrepasar los 20cm cuadrados en el plano XY , ya que ese es el límite de la impresora 3D <em>Ender 5</em>.</p>
-<p><img src="/img/encargo1grupo/impresora.jpg" alt="Imagen Simple"></p>
-<p>Por otra parte elegimos una figura hexagonal, ya que esta forma permite organizar las macetas en un espacio reducido, estas se pueden ordenar e ir poniendo una al lado de otra de manera que encajen y optimicen el espacio disponible, simulando la forma de un panal de abejas.</p>
-<p><img src="/img/encargo1grupo/2.png" alt="Imagen Simple"></p>
-<p>Para modelar en 3D usamos el software Rhino, a continuación les mostramos el paso a paso que llevamos a cabo con cada parte de este diseño.</p>
-<p><strong>Maceta:</strong></p>
-<ul>
-<li>Hicimos un hexágono en base a una línea de 17 cm de ancho para darle la medida al diámetro del tamaño estándar del macetero.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso1.png" alt="Imagen Simple"></p>
-<ul>
-<li>Convertimos la curva del hexágono en una superficie plana y la extruimos a 10 cm de altura respecto al plano inicial.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso2.png" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/paso4.png" alt="Imagen Simple"></p>
-<ul>
-<li>Para hacer el hueco del macetero y darle un grosor de 2 cm a las paredes, aplicamos el comando <em>Shell</em>.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso5.png" alt="Imagen Simple"></p>
-<ul>
-<li>Luego le hacemos un <em>Fillet Edge</em> 0,25 cm a casi todos los bordes de la figura, tanto los de dentro como los de fuera. Esto es para no tener ángulos rectos y que así la figura no  quede muy filuda. NO aplicamos este comando a los bordes superiores externos, con el fin de facilitar el retiro de la maceta.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso6.png" alt="Imagen Simple"></p>
-<p><strong>Molde:</strong></p>
-<ul>
-<li>Después, para crear el molde del macetero, creamos un círculo de 19 cm de diámetro que nos servirá tanto para la base, como para la tapa del molde. Específicamente en el caso de la base posicionamos el círculo a 2 cm por debajo de la figura del macetero para extruirlo a una altura de 12 cm.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso7.png" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/paso8.png" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/paso9.png" alt="Imagen Simple"></p>
-<ul>
-<li>Luego hicimos una booleana de diferencia entre el cilindro y la figura del macetero para obtener la base del molde.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso10.png" alt="Imagen Simple"></p>
-<ul>
-<li>En la parte inferior de esta base le hicimos un cilindro de 1cm de diámetro y 2 cm de altura, que servirá para generar un orificio al macetero que permitiendo el paso y la filtración de agua.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso11.png" alt="Imagen Simple"></p>
-<p><strong>Contramolde:</strong></p>
-<ul>
-<li>Por otro lado, para hacer la tapa del molde posicionamos el círculo de 19 cm de diámetro nombrado anteriormente a 2 cm sobre la figura del macetero y la extruimos 12 cm hacia abajo formando un cilindro.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso12.png" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/paso13.png" alt="Imagen Simple"></p>
-<ul>
-<li>En este caso hicimos una booleana de diferencia entre el cilindro de la tapa y la figura del macetero.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso14.png" alt="Imagen Simple"></p>
-<ul>
-<li>Luego, volvimos a aplicar el comando <em>Boolean Difference</em> pero en este caso entre la tapa del molde y la base para obtener la figura final de la tapa.</li>
-</ul>
-<p><img src="/img/encargo1grupo/paso15.png" alt="Imagen Simple"></p>
-<p>Así queda finalmente el molde y el contramolde de nuestro macetero</p>
-<p><img src="/img/encargo1grupo/paso16.png" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/paso17.png" alt="Imagen Simple"></p>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img//encargo1grupo/video1.mp4"  type="video/mp4">
-    </video>
-</div>
-<h4 id="planimetrías">Planimetrías</h4>
-<h6 id="medidas">Medidas</h6>
-<table>
-<thead>
-<tr>
-<th align="left">Ítem</th>
-<th align="left">Maceta</th>
-<th align="left">Molde</th>
-<th align="left">Contramolde</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Diámetro</td>
-<td align="left">17 cm</td>
-<td align="left">19 cm</td>
-<td align="left">19 cm</td>
-</tr>
-<tr>
-<td align="left">Diámetro interior/ inferior</td>
-<td align="left">15 cm</td>
-<td align="left">17 cm</td>
-<td align="left">15 cm</td>
-</tr>
-<tr>
-<td align="left">Alto</td>
-<td align="left">10 cm</td>
-<td align="left">12 cm</td>
-<td align="left">10 cm</td>
-</tr>
-<tr>
-<td align="left">Grosor</td>
-<td align="left">2 cm</td>
-<td align="left">2 cm</td>
-<td align="left">2 cm</td>
-</tr>
-</tbody>
-</table>
-<p><img src="/img/encargo1grupo/planimetria.png" alt="Imagen Simple"></p>
-<h4 id="renders">Renders</h4>
-<p><img src="/img/encargo1grupo/render1.jpg" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/render2.jpg" alt="Imagen Simple"></p>
-<p><img src="/img/encargo1grupo/render3.jpg" alt="Imagen Simple"></p>
-<h2 id="2-investigación-de-materiales">2. Investigación de materiales</h2>
-<p>Nuestras macetas serán a base de <strong>papel carft o de diario</strong> y/o <strong>cartón</strong> reciclado, ya que es el material que nos permite formar la figura y darle fuerza al momento de secarse. También le incorporaremos a cada una de ellas el <strong>engrudo casero</strong>, el cual cumple la función de unir todos los componentes que conforman estos contenedores. Para fabricarlo se necesita ¼ de taza de maicena y 3 tazas de agua, las cuales se cocinarán posteriormente a fuego lento.</p>
-<p>Además a cada macetero le incorporaremos distintos elementos orgánicos, los cuales esperamos que conviertan estas macetas en un mejor lugar para que las plantas germinen y se desarrollen, gracias a sus distintas propiedades. A continuación dejamos cada uno de ellos.</p>
+  <h2 id="prueba-física-de-materiales">PRUEBA FÍSICA DE MATERIALES</h2>
+<p>Teniendo en cuenta el potencial que se le puede sacar a la técnica del papel maché, los siguientes contenedores que se harán en esta documentación estarán todas compuestas de <strong>papel carft o de diario</strong> y/o <strong>cartón</strong> reciclado, ya que es el material que nos permite formar la figura y darle fuerza al momento de secarse. También le incorporaremos a cada una de ellas el <strong>engrudo casero</strong>, el cual cumple la función de unir todos los componentes que conforman estos contenedores. Para fabricarlo se necesita ¼ de taza de maicena o harina y 3 tazas de agua, las cuales se cocinarán posteriormente a fuego lento.</p>
+<p>En cuanto al proceso de fabricación a cada macetero le incorporaremos distintos elementos orgánicos, los cuales esperamos que conviertan estas macetas en un mejor lugar para que las plantas germinen y se desarrollen, gracias a sus distintas propiedades. A continuación, se nombraran algunos materiales organicos y sus respectivos beneficios:</p>
 <h4 id="materiales-orgánicos-y-sus-propiedades">Materiales orgánicos y sus propiedades</h4>
 <ul>
 <li>
@@ -282,23 +172,493 @@
 </ul>
 <p><img src="/img/encargo1grupo/3.png" alt="Imagen Simple"></p>
 <h4 id="tipos-de-maceteros-a-realizar">Tipos de maceteros a realizar</h4>
+<p>Para un primer acercamiento a experimentar con algunos de los materiales orgánicos, quice probar en primera instancia hacer un macetero compuesto totalmente con engrudo y papel reciclado y después diferencialo con el resultado de esta mezcla junto a otros materiales orgánicos:</p>
 <ol>
-<li>
-<p>Base de papel + engrudo + mandarina + café + base de cáscara huevo</p>
-</li>
-<li>
-<p>Base de papel + engrudo + plátano + té + base de cáscara de huevo</p>
-</li>
-<li>
-<p>Base de papel + engrudo + cebolla + té + base de cáscara de huevo</p>
-</li>
-<li>
-<p>Base de papel + engrudo + palta + base de cáscara huevo</p>
-</li>
-<li>
-<p>Base de papel + engrudo + naranja + base de cáscara huevo</p>
-</li>
+<li>Base de papel + Engrudo + Azúcar</li>
 </ol>
+<p>Para hacer este macetero ocupé los siguientes materiales:</p>
+<ul>
+<li>Papel</li>
+<li>Cartón</li>
+<li>Harina</li>
+<li>Agua</li>
+<li>Azucar</li>
+</ul>
+<p>Empecé trozando pedazos o tiras de cartón y papel para dejarlos remojando en agua por varias horas. Una vez que los materiales quedaron blandos, ocupé una minipimer para moler el contenido. Luego, utlicé un paño de cocina para extraer de a poco el agua del del cartón/papel remojado y triturado, también es posible ocupar directamente un colador.</p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p1//a.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p1//a.jpeg" alt="A" />
+				    </div>
+			      <figcaption>
+		          <p>A</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p1//a.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p1//b.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p1//b.jpeg" alt="B" />
+				    </div>
+			      <figcaption>
+		          <p>B</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p1//b.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p1//c.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p1//c.jpeg" alt="C" />
+				    </div>
+			      <figcaption>
+		          <p>C</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p1//c.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<p>En vez de hacer la técnica del papel maché, decidí también agregar otra mezcla que consistía en harina, azucar y agua. Puse en una olla 2 taza de agua y aparte 1/2 taza de harina en un bowl con 1 taza de agua. Luego, lo añadí al agua de la olla, le agregué un poco de azúcar para la consistencia y mezclé un rato a fuego lento. Se deja encendido hasta que la mezcla se torne más densa y después hay que seguir moviendo la mezcla, para que no se pegue, hasta que esté tibio. Después añadí el cartón/papel que antes había trozado a la mezcla de harina y lo revolví.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p2//d.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p2//d.jpeg" alt="D" />
+				    </div>
+			      <figcaption>
+		          <p>D</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p2//d.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p2//e.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p2//e.jpeg" alt="E" />
+				    </div>
+			      <figcaption>
+		          <p>E</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p2//e.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p2//f.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p2//f.jpeg" alt="F" />
+				    </div>
+			      <figcaption>
+		          <p>F</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p2//f.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p2//g.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p2//g.jpeg" alt="G" />
+				    </div>
+			      <figcaption>
+		          <p>G</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p2//g.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<p>Una vez que tengamos listo lo anterior, podemos sacar la masa de la olla para seguir amasándola en alguna superficie. Si la masa se ve aún muy pegajosa puedes añadirle más harina hasta que quede una masa un poco más compacta.</p>
+<p>Finalmente, cuando la masa ya esté lista, buscamos algún molde a gusto que nos servirá para darle forma a nuestro macetero. Este lo pondremos bajo el sol hasta veamos que se seque.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p3//h.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p3//h.jpeg" alt="H" />
+				    </div>
+			      <figcaption>
+		          <p>H</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p3//h.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p3//i.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p3//i.jpeg" alt="I" />
+				    </div>
+			      <figcaption>
+		          <p>I</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p3//i.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p3//j.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p3//j.jpeg" alt="J" />
+				    </div>
+			      <figcaption>
+		          <p>J</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p3//j.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p3//k.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p3//k.jpeg" alt="K" />
+				    </div>
+			      <figcaption>
+		          <p>K</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p3//k.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p3//l.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p3//l.jpeg" alt="L" />
+				    </div>
+			      <figcaption>
+		          <p>L</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p3//l.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/bonus3/p3//m.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/bonus3/p3//m.jpeg" alt="M" />
+				    </div>
+			      <figcaption>
+		          <p>M</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/bonus3/p3//m.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<p>El resultado de este contenedor al principio no se veía tan resistente ya que a medida que se secaba algunos pedazos se desprendían, pero luego de dejarlo 1 semana secando el contenedor tomó una forma compacta y muy resistente. Le salió moho en algunas partes pero lo restregué para quitar por lo menos lo que podía verse en la superficie y no tuvo ningún problema con el agua, intente golpearlo contra el piso para ver si se desarmaba y no resultó con ningún daño.</p>
+<p><img src="/img/encargo1grupo/a.jpeg" alt="Imagen Simple">
+<img src="/img/encargo1grupo/b.jpeg" alt="Imagen Simple"></p>
+<ol start="3">
+<li>Base de papel + engrudo + Cáscara de naranja + Café</li>
+</ol>
+<p>En este proceso volvimos a hacer un engrudo, esta vez sin azúcar, mezclé 1 taza de agua con 1/2 taza de harina para diluirla y luego lo agregué a una hoya con 2 tazas de agua para revolver a fuego lento hasta tener una mezcla más densa. Mientras dejé la mezcla entibiar, me puse a moler los trozos de papel reciclado que se estuvieron remojando 72hrs y con un paño extraje todo el agua contenido en el papel molido. Una vez que tengo el engrudo y la base de papel, agregaremos en un bowl 1 taza de engrudo, 1 1/2 taza del papel molido, 1 taza de café y 1 taza de cáscara de naranja molida. Tomé como molde un pote de la cocina y fui dándole forma a la maceta.</p>
+<p><img src="/img/F1/A.jpeg" alt="Imagen Simple">
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//1.jpeg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//10.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//10.jpeg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//10.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//11.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//11.jpeg" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//11.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//2.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//3.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//4.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//4.jpeg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//4.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//5.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//5.jpeg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//5.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//6.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//6.jpeg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//6.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//7.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//7.jpeg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//7.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//8.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//8.jpeg" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//8.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/1//9.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/1//9.jpeg" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/1//9.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<ol start="2">
+<li>Base de papel + engrudo + plátano + té + Café</li>
+</ol>
+<p>Como ya tengo la base de mi engrudo, en un bowl puse 1/2 taza de cáscara de plátano molido, 1/2 de café, 1/2 taza de hojas de té, 1 1/2 taza de papel y 1 taza de engrudo. Revolví todos los ingredientes y ocupé otro molde de referencia.</p>
+<p><img src="/img/F1/B.jpeg" alt="Imagen Simple">
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/2//1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/2//1.jpeg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/2//1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/2//2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/2//2.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/2//2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/2//3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/2//3.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/2//3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://hzhangan.github.io//img/F1/2//4.jpeg');" >
+				      <img itemprop="thumbnail" src="https://hzhangan.github.io//img/F1/2//4.jpeg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://hzhangan.github.io//img/F1/2//4.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h2 id="experimentación-grupal">Experimentación grupal</h2>
+<p>El proceso de experimentación lo hice a la par con mi grupo, decidimos separar los ingredientes para que cada uno pudisemos experimentar con los productos que teníamos en la casa.</p>
+<p>Todas las macetas que fabricamos son a base de <strong>papel carft</strong> reciclado, el cual cortamos, remojamos por 72 horas aproximadamente y le sacamos el exceso de agua.</p>
+<p><img src="/img/revisiongrupal/2.png" alt="Imagen Simple"></p>
+<p>Para posteriormete incorporarle a cada una de ellas <strong>engrudo casero</strong>, el cual cumple la función de unir todos los componentes que conforman estos contenedores. Para fabricarlo se necesita 1/2 de taza de harina y 3 tazas de agua, las cuales se cocinaron por aproximadamente por 30 minutos a fuego lento.</p>
+<p><img src="/img/revisiongrupal/3.png" alt="Imagen Simple"></p>
+<p>Además a cada macetero le agregamos elementos orgánicos, que en base a la investigación de las propiedades expuesta en el post anterior creemos que convierten estas macetas en un mejor lugar para que las plantas germinen y se desarrollen.</p>
+<p>A cada molde le pusimos papel plástico o bolsas de basura, para que una vez secos no sea tedioso retirar la maceta del molde.</p>
+<p><img src="/img/revisiongrupal/10.png" alt="Imagen Simple"></p>
+<h4 id="tipos-de-maceteros-que-realizamos">Tipos de maceteros que realizamos</h4>
+<ol>
+<li>1 taza y media de papel + 1 taza engrudo + cáscara de 6 <em>mandarinas</em> + 3/4 taza de <em>café</em> + cáscara de 1 <em>huevo</em>:</li>
+</ol>
+<p><img src="/img/revisiongrupal/4.png" alt="Imagen Simple"></p>
+<ol start="2">
+<li>1 taza y media de papel + 1 taza engrudo + cáscara de 5 <em>cebollas</em> + 3/4 taza de <em>café</em> + cáscara de 1 <em>huevo</em>:</li>
+</ol>
+<p><img src="/img/revisiongrupal/5.png" alt="Imagen Simple"></p>
+<ol start="3">
+<li>1 taza y media de papel + 1 taza engrudo + cáscara de 4 <em>paltas</em> + 3/4 taza de <em>café</em> + cáscara de 1 <em>huevo</em>:</li>
+</ol>
+<p><img src="/img/revisiongrupal/6.png" alt="Imagen Simple"></p>
+<ol start="4">
+<li>5 tazas de papel + 1/2 taza de engrudo + 1 taza de <em>té</em> + cáscara de 3 <em>huevos</em>:</li>
+</ol>
+<p><img src="/img/revisiongrupal/9.png" alt="Imagen Simple"></p>
+<ol start="5">
+<li>1 taza de papel + 1 taza de engrudo + 1 taza de cáscara de <em>naranja</em> molida + 3/4 de taza de café</li>
+</ol>
+<p><img src="/img/revisiongrupal/15.png" alt="Imagen Simple"></p>
+<ol start="6">
+<li>1 taza de papel + 1 taza de engrudo + 1/2 taza de cáscara de <em>plátano</em> + 1/2 taza de hojas de <em>té</em> + 3/4 taza de <em>café</em></li>
+</ol>
+<p><img src="/img/revisiongrupal/16.png" alt="Imagen Simple"></p>
+<p>Más macetas de mandarina, palta y cebolla:</p>
+<p><img src="/img/revisiongrupal/11.png" alt="Imagen Simple"></p>
+<h4 id="germinando">Germinando</h4>
+<p>Además de continuar con las germinaciones de legumbres que hicimos las semanas pasadas, los porotos y las lentejas. Agregamos al proceso de plantación semillas de tomates y de pimentones. Esto lo hicimos en cajas de vinos de madera recicladas, las cuales intervenimos a través de perforaciones en su base para permitir la filtración del agua y las forramos con bolsas de basura biodegradables para que no traspase el exceso de agua al material.</p>
+<p><img src="/img/revisiongrupal/7.png" alt="Imagen Simple"></p>
+<p><img src="/img/revisiongrupal/8.png" alt="Imagen Simple"></p>
+<h4 id="conclusiones">Conclusiones</h4>
+<p>Con el paso del tiempo, los contenedores de distintos desechos orgánicos fueron tomando olores, colores y texturas distintas. El contenedor de cebolla morada con café y el de palta con café comenzaron a tomar un olor muy fuerte a descomposición y les salieron hongos en el interior, por lo que los tuvimos que desechar. En el contendor que utilizamos cebolla amarilla le salió un poco de olor, pero no tan fuerte.</p>
+<p>La maceta de plátano con té y café, tuvo unos indicios de moho, pero esos hongos no se extendieron y en general se mantiene bastante bien.</p>
+<p>En cambio al contenedor de té y al de naranja y café, no le salieron hongos hasta matienen un buen olor. Han resistido en perfectas condiciones todo el periodo de experimentación.</p>
+<p>Creemos que existen dos factores fundamentales para que las macetas sean resistentes y no se hechen a perder por los ingredientes orgánicos que les ponemos. En primer lugar, es muy importante cocinar por bastante tiempo el engrudo para que la harina se cocine y no quede cruda en un futuro, siendo de esa manera una potencial cuna de descomposición. En segundo lugar, es relevante que utilizemos una gran cantidad de engrudo respecto al papel y desechos orgánicos que implementemos, ya que si todo queda sellado por la cola casera su descomposición se tardará.</p>
+<h4 id="continuamos-germinando">Continuamos germinando</h4>
+<p>Las germinaciones de legumbres que hicimos las semanas pasadas, los porotos y las lentejas han crecido de manera exitosa. En cambio los tomates y pimentones no han sobresalido de la tierra en la maceta.</p>
+<p><img src="/img/preexamen/semillas.png" alt="Imagen Simple"></p>
 <h2 id="3-bibliografía">3. Bibliografía</h2>
 <ul>
 <li>
