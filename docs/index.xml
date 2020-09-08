@@ -110,5 +110,23 @@
       <description>Documentación del Encargo Grupal (Daza-Pinto-Zhang) sobre el diseño y modelado 3D de la maceta, su molde y contramolde.</description>
     </item>
     
+    <item>
+      <title>Examen: Proceso</title>
+      <link>https://hzhangan.github.io/docs/examen-proceso/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/examen-proceso/</guid>
+      <description>Documentación del Examen Final (Daza-Pinto-Zhang) sobre el proceso del diseño y modelado 3D de la maceta, su molde y contramolde. Junto al recorrido en la  experimentación de materiales para poder fabricar nuestro contenedor.</description>
+    </item>
+    
+    <item>
+      <title>Examen: Producto</title>
+      <link>https://hzhangan.github.io/docs/examen-producto/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://hzhangan.github.io/docs/examen-producto/</guid>
+      <description>Documentación del Examen Final (Daza-Pinto-Zhang) sobre el producto final que diseñamos llamado Bee.</description>
+    </item>
+    
   </channel>
 </rss>
