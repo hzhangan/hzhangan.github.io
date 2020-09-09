@@ -1,6 +1,6 @@
 var scene, camera, renderer, clock, deltaTime, totalTime;
 var arToolkitSource, arToolkitContext;
-var p001, p002, p003, p005;
+var p001, p002, p003, p004, p005, p006;
 
 init();
 animate();
@@ -134,7 +134,7 @@ function init() {
 	foto002.rotation.x = -Math.PI / 2;
 	p002.add(foto002);
 
-	//KAKO
+	//IGNACIO
 	p003 = new THREE.Group();
 	p003.name = 'marker3';
 	scene.add(p003);
@@ -151,6 +151,24 @@ function init() {
 	let foto003 = new THREE.Mesh(meme003, material003);
 	foto003.rotation.x = -Math.PI / 2;
 	p003.add(foto003);
+
+	//NICOLÁS
+	p004 = new THREE.Group();
+	p004.name = 'marker4';
+	scene.add(p004);
+	let markerControls4 = new THREEx.ArMarkerControls(arToolkitContext, p004, {
+		type: 'pattern',
+			patternUrl: "data/nicolas.patt",
+	})
+	
+	let meme004 = new THREE.PlaneBufferGeometry(1,1.5,6,6);
+	let loader004 = new THREE.TextureLoader();
+	let texture004 = loader004.load('./images/Nicolás.png')
+	let material004 = new THREE.MeshBasicMaterial({map:texture004});
+	
+	let foto004 = new THREE.Mesh(meme004, material004);
+	foto004.rotation.x = -Math.PI / 2;
+	p004.add(foto004);	
 
 	//JUAN CARLOS
 	p005 = new THREE.Group();
@@ -170,6 +188,23 @@ function init() {
 	foto005.rotation.x = -Math.PI / 2;
 	p005.add(foto005);
 
+	//CAMILIA
+	p006 = new THREE.Group();
+	p006.name = 'marker5';
+	scene.add(p006);
+	let markerControls6 = new THREEx.ArMarkerControls(arToolkitContext, p006, {
+		type: 'pattern',
+		patternUrl: "data/camila.patt",
+	})
+
+	let meme006 = new THREE.PlaneBufferGeometry(1,1.5,6,6);
+	let loader006 = new THREE.TextureLoader();
+	let texture006 = loader006.load('./images/camila.png')
+	let material006 = new THREE.MeshBasicMaterial({map:texture006});
+
+	let foto006 = new THREE.Mesh(meme006, material006);
+	foto006.rotation.x = -Math.PI / 2;
+	p006.add(foto006);	
 }
 
 
