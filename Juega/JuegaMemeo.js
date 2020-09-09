@@ -1,7 +1,6 @@
 var scene, camera, renderer, clock, deltaTime, totalTime;
 var arToolkitSource, arToolkitContext;
-var markerRoot1;
-var mesh1;
+var p001, p002, p003, p005;
 
 init();
 animate();
@@ -99,28 +98,77 @@ function init() {
 	// setup markerRoots
 	////////////////////////////////////////////////////////////
 
-	// build markerControls
-	markerRoot1 = new THREE.Group();
-	markerRoot1.name = 'marker1';
-	scene.add(markerRoot1);
-	let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
+	//HAIYING
+	p001 = new THREE.Group();
+	p001.name = 'marker1';
+	scene.add(p001);
+	let markerControls1 = new THREEx.ArMarkerControls(arToolkitContext, p001, {
 		type: 'pattern',
 		patternUrl: "data/haiying.patt",
 	})
 
-	/////////////////////////GEOMETRIAS//////////////////////////////
+	let meme001 = new THREE.PlaneBufferGeometry(1,1.5,6,6);
+	let loader001 = new THREE.TextureLoader();
+	let texture001 = loader001.load('./images/haiying.png')
+	let material001 = new THREE.MeshBasicMaterial({map:texture001});
 
-	//01- CREACION CAJA
+	let foto001 = new THREE.Mesh(meme001, material001);
+	foto001.rotation.x = -Math.PI / 2;
+	p001.add(foto001);
 
-	let geoPlane = new THREE.PlaneBufferGeometry(1,1.5,6,6);
-	let loader2 = new THREE.TextureLoader();
-	let texture3 = loader2.load('./images/haiying.png')
-	let material4 = new THREE.MeshBasicMaterial({map:texture3});
+	//CONSTANZA
+	p002 = new THREE.Group();
+	p002.name = 'marker2';
+	scene.add(p002);
+	let markerControls2 = new THREEx.ArMarkerControls(arToolkitContext, p002, {
+		type: 'pattern',
+		patternUrl: "data/constanza.patt",
+	})
 
-	let meshImage = new THREE.Mesh(geoPlane, material4);
-	meshImage.rotation.x = -Math.PI / 2;
-	markerRoot1.add(meshImage);
+	let meme002 = new THREE.PlaneBufferGeometry(1,1.5,6,6);
+	let loader002 = new THREE.TextureLoader();
+	let texture002 = loader002.load('./images/constanza.png')
+	let material002 = new THREE.MeshBasicMaterial({map:texture002});
 
+	let foto002 = new THREE.Mesh(meme002, material002);
+	foto002.rotation.x = -Math.PI / 2;
+	p002.add(foto002);
+
+	//KAKO
+	p003 = new THREE.Group();
+	p003.name = 'marker3';
+	scene.add(p003);
+	let markerControls3 = new THREEx.ArMarkerControls(arToolkitContext, p003, {
+		type: 'pattern',
+			patternUrl: "data/kako.patt",
+	})
+	
+	let meme003 = new THREE.PlaneBufferGeometry(1,1.5,6,6);
+	let loader003 = new THREE.TextureLoader();
+	let texture003 = loader003.load('./images/kako.png')
+	let material003 = new THREE.MeshBasicMaterial({map:texture003});
+	
+	let foto003 = new THREE.Mesh(meme003, material003);
+	foto003.rotation.x = -Math.PI / 2;
+	p003.add(foto003);
+
+	//JUAN CARLOS
+	p005 = new THREE.Group();
+	p005.name = 'marker5';
+	scene.add(p005);
+	let markerControls5 = new THREEx.ArMarkerControls(arToolkitContext, p005, {
+		type: 'pattern',
+		patternUrl: "data/juanca.patt",
+	})
+
+	let meme005 = new THREE.PlaneBufferGeometry(1,1.5,6,6);
+	let loader005 = new THREE.TextureLoader();
+	let texture005 = loader005.load('./images/juancarlos.png')
+	let material005 = new THREE.MeshBasicMaterial({map:texture005});
+
+	let foto005 = new THREE.Mesh(meme005, material005);
+	foto005.rotation.x = -Math.PI / 2;
+	p005.add(foto005);
 
 }
 
